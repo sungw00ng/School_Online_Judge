@@ -9,7 +9,7 @@
 - `sudo systemctl start mysql` 명령어가 실패하였다.
 - `systemctl status` 로그를 통해서 MYSQL 시작 전 데이터디렉터리(var/lib/mysql) 초기화 단계에서 오류가 발생하였음을 확인하였다.
 
-# 반복 변수 오류 해결
+## 반복 변수 오류 해결
 - 데이터 디렉터리 초기화를 위해 `sudo mysqld --initialize` 명령어를 사용하려하였다.
 > /etc/mysql/mariadb.conf.d/ 디렉터리에서 알수없는 변수를 삭제하여도
 > `sudo grep -r "provider_bzip2" /etc/`
